@@ -39,16 +39,6 @@ Distinzione importante: il **colore di un punto è l'esito storico del pozzo** (
 
 Registro completo dei link e delle date in [`SOURCES.md`](SOURCES.md).
 
-## Come è fatto (riproducibilità)
-
-```
-prepare_data.py   # dati grezzi (CSV/KML) → JSON puliti in data/processed/
-build_map.py      # JSON + template src/ → index.html (mappa autoconsistente)
-serve.py          # server locale per provarla (vedi nota Chrome sotto)
-```
-
-`index.html` è un file unico (~3,6 MB) con dati e libreria incorporati: si pubblica così com'è su GitHub Pages. Le cifre nei testi (pozzi georeferenziati, anni, copertura…) sono **calcolate dai dati** in fase di build, non scritte a mano.
-
 ## Note e limiti (in chiaro)
 
 - Le coordinate dei pozzi sono convertite dal **meridiano di Monte Mario** a WGS84; **60 pozzi** con coordinate non interpretabili sono esclusi (elenco in `data/processed/scartati.txt`).
@@ -57,10 +47,10 @@ serve.py          # server locale per provarla (vedi nota Chrome sotto)
 - Le **istanze** non hanno un documento per singola domanda: il popup rimanda al registro UNMIG. I **titoli concessi**, invece, linkano i PDF dei decreti.
 
 
-## Crediti
+## Crediti e licenza
+Interfaccia ispirata alle mappe di **PalermoHub** ([opendatasicilia.it](https://palermohub.opendatasicilia.it/) · repo [SiciliaHub/palermohub](https://github.com/SiciliaHub/palermohub)), progetto di **Open Data Sicilia** curato da @aborruso, @cirospat e **@gbvitrano**, di cui ho rielaborato il template con stile e layout propri.
 
-Interfaccia ispirata ai lavori di **[@opendatasicilia](https://github.com/opendatasicilia) (PalermoHub / Open Data Sicilia)**, rielaborata con stile e layout propri.
+- **Interfaccia/presentazione:** Creative Commons **CC BY-SA 4.0**
+- **Dati:** dei rispettivi titolari - ViDEPI (pubblici), UNMIG/MASE (CC BY 4.0) - qui ripubblicati come elaborazioni e fatti derivati, con attribuzione.
 
-I dati restano dei rispettivi titolari, licenza CC BY 4.0. Questo progetto ne ripubblica elaborazioni e fatti derivati, con attribuzione.
-
-Prototipo civico indipendente. Nessun fine commerciale.
+Prototipo civico indipendente, senza fini commerciali.
