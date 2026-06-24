@@ -1,0 +1,62 @@
+# Pozzi esclusi dalla mappa: coordinate assenti o errate nella fonte ufficiale.
+# Verificato anche sull'elenco UNMIG aggiornato al 2023 e su quello di coltivazione:
+# per questi pozzi non risultano coordinate valide pubblicate.
+# nome	motivo
+BARBARA C 019 DIR B	coordinate non valide alla fonte (minuti o secondi >= 60)
+MELANIA 002	coordinate non valide alla fonte (minuti o secondi >= 60)
+CA' BELLAVISTA 129	coordinate assenti nella fonte
+RIOLA 124	coordinate assenti nella fonte
+CA' DI SIMONE 039	coordinate assenti nella fonte
+CA' DI SIMONE 041	coordinate assenti nella fonte
+GUERZO 001	coordinate assenti nella fonte
+RIOLA 121	coordinate assenti nella fonte
+TRIGNANO 012	coordinate assenti nella fonte
+VIDICIATICO 023	coordinate assenti nella fonte
+CA' BOLDRINI 016	coordinate assenti nella fonte
+GAGGIOLA 119	coordinate assenti nella fonte
+MOLINAZZO 007	coordinate assenti nella fonte
+MOLINAZZO 009	coordinate assenti nella fonte
+RALLIO 012	coordinate assenti nella fonte
+RIOLA 120	coordinate assenti nella fonte
+SALGASTRI 123	coordinate assenti nella fonte
+VIDICIATICO 019	coordinate assenti nella fonte
+VIDICIATICO 020	coordinate assenti nella fonte
+VIDICIATICO 021	coordinate assenti nella fonte
+VIDICIATICO 022	coordinate assenti nella fonte
+CA' BOLDRINI 014	coordinate assenti nella fonte
+GRECCHIA 037	coordinate assenti nella fonte
+GRECCHIA 038	coordinate assenti nella fonte
+GRECCHIA 039	coordinate assenti nella fonte
+MOLINAZZO 008	coordinate assenti nella fonte
+MONTALBANO 016	coordinate assenti nella fonte
+SALGASTRI 116	coordinate assenti nella fonte
+TRIGNANO 010	coordinate assenti nella fonte
+VIDICIATICO 004	coordinate assenti nella fonte
+VULCANO 002 EM	coordinate assenti nella fonte
+AMBROGIO 022	coordinate assenti nella fonte
+AMBROGIO 023	coordinate assenti nella fonte
+AMBROGIO 024	coordinate assenti nella fonte
+AMBROGIO 025	coordinate assenti nella fonte
+BONIFICA UMANA 013	coordinate assenti nella fonte
+CAVARZERE 001	coordinate assenti nella fonte
+CAO MARINA 023	coordinate assenti nella fonte
+TABIANO 032	coordinate assenti nella fonte
+CANALNUOVO 001	coordinate assenti nella fonte
+CAO MARINA 008	coordinate assenti nella fonte
+CAO MARINA 009	coordinate assenti nella fonte
+CAO MARINA 010	coordinate assenti nella fonte
+CAO MARINA 011	coordinate assenti nella fonte
+CAO MARINA 012	coordinate assenti nella fonte
+CAO MARINA 013	coordinate assenti nella fonte
+CAO MARINA 014	coordinate assenti nella fonte
+CAO MARINA 002	coordinate assenti nella fonte
+CAO MARINA 003	coordinate assenti nella fonte
+CAO MARINA 004	coordinate assenti nella fonte
+CAO MARINA 005	coordinate assenti nella fonte
+CAO MARINA 006	coordinate assenti nella fonte
+CAO MARINA 007	coordinate assenti nella fonte
+CAO MARINA 001	coordinate assenti nella fonte
+TURRO 001	coordinate assenti nella fonte
+VIZZOLA 001	coordinate assenti nella fonte
+AMOLARETTA 003	coordinate assenti nella fonte
+ALFA	coordinate assenti nella fonte

@@ -42,7 +42,7 @@
   <div id="titlist" class="titlist"></div>
   <h2>Filtri</h2>
   <label class="chk"><input type="checkbox" id="onlyT"> solo pozzi dentro un titolo vigente</label>
-  <label class="chk"><input type="checkbox" id="onlyProd"> solo titoli che producono (2024&ndash;2025)</label>
+  <label class="chk"><input type="checkbox" id="onlyProd"> solo titoli che producono (__PROD_ACT_MIN__&ndash;__PROD_MAX__)</label>
   <div class="row"><input id="q" placeholder="cerca pozzo, titolo, operatore o zona&#8230;"></div>
   <h2>Legenda &mdash; aree (titoli)</h2>
   <div class="chk"><span class="sw" style="background:#d95f0e;border-color:#d95f0e"></span>Concessione di coltivazione</div>
@@ -57,7 +57,7 @@
 <div id="trend" class="modal"><div class="mbox">
   <button id="b-trend-close" class="lite x" style="float:right">chiudi &times;</button>
   <h1>Andamento nazionale</h1>
-  <div style="margin-bottom:6px;color:var(--faint);font-size:11px">Produzione dal 2004 &middot; perforazioni dal 1895. Passa sul grafico per i valori.</div>
+  <div style="margin-bottom:6px;color:var(--faint);font-size:11px">Produzione dal __PROD_MIN__ &middot; perforazioni dal __ANNO_MIN__. Passa sul grafico per i valori.</div>
   <div id="trendBody"></div>
 </div></div>
 <div id="modal"><div class="mbox">
@@ -66,14 +66,14 @@
   <div style="color:var(--mut);font:11px var(--mono);letter-spacing:.06em">Pozzi storici &middot; titoli &middot; produzione &middot; decreti &mdash; prototipo civico, dati aperti</div>
   <div class="tabs"><button data-t="howto" class="on">Come funziona</button><button data-t="fonti">Fonti dati</button><button data-t="credits">Credits</button></div>
   <section id="howto" class="on">
-    <p>Ogni <b>punto</b> &egrave; un pozzo di idrocarburi perforato in Italia dal 1895 al 2023 (archivio <b>ViDEPI</b>), colorato per <b>esito</b>. Ogni <b>area</b> &egrave; un <b>titolo minerario vigente</b> (dati <b>UNMIG</b>).</p>
+    <p>Ogni <b>punto</b> &egrave; un pozzo di idrocarburi perforato in Italia dal __ANNO_MIN__ al __ANNO_MAX__ (archivio <b>ViDEPI</b>), colorato per <b>esito</b>. Ogni <b>area</b> &egrave; un <b>titolo minerario vigente</b> (dati <b>UNMIG</b>).</p>
     <p>Clicca un pozzo o un'area: esito, conferimento, titolari, <b>produzione</b> (volumi e andamento) e i <b>link ai PDF dei decreti</b>. Seleziona uno o pi&ugrave; <b>titolari</b> per isolare le loro aree e i loro pozzi; spunta <b>"solo titoli che producono"</b> per vedere solo ci&ograve; che estrae oggi.</p>
-    <p class="k" style="font:inherit;text-transform:none;color:var(--mut)">Copertura: 3.823 pozzi su 7.264 cadono in un titolo ancora vigente; gli altri (grigi) stanno sotto titoli cessati &mdash; la memoria delle trivellazioni che abbiamo reso navigabile.</p>
+    <p class="k" style="font:inherit;text-transform:none;color:var(--mut)">Copertura: __N_VIGENTE__ pozzi su __N_GEOREF__ cadono in un titolo ancora vigente; gli altri (grigi) stanno sotto titoli cessati &mdash; la memoria delle trivellazioni che abbiamo reso navigabile.</p>
   </section>
   <section id="fonti">
-    <h3>Pozzi</h3><p>Progetto <b>ViDEPI</b> via UNMIG/MASE (1895&ndash;2023). Coordinate convertite dal meridiano di Monte Mario a WGS84; 58 pozzi privi di coordinate valide esclusi.</p>
+    <h3>Pozzi</h3><p>Progetto <b>ViDEPI</b> via UNMIG/MASE (__ANNO_MIN__&ndash;__ANNO_MAX__). Coordinate convertite dal meridiano di Monte Mario a WGS84; __N_SCARTATI__ pozzi privi di coordinate valide esclusi.</p>
     <h3>Titoli e geometrie</h3><p>Perimetri ufficiali dei titoli vigenti, <b>UNMIG/MASE</b> (KML, <b>CC BY 4.0</b>). Storia dei provvedimenti con link ai PDF dei decreti.</p>
-    <h3>Produzione</h3><p>Produzione mensile per titolo 2004&ndash;2025 (UNMIG/MASE).</p>
+    <h3>Produzione</h3><p>Produzione mensile per titolo __PROD_MIN__&ndash;__PROD_MAX__ (UNMIG/MASE).</p>
   </section>
   <section id="credits">
     <p>Interfaccia ispirata alle mappe di <b>PalermoHub</b> (<a href="https://palermohub.opendatasicilia.it/" target="_blank">opendatasicilia.it</a> &middot; repo <a href="https://github.com/SiciliaHub/palermohub" target="_blank">SiciliaHub/palermohub</a>), progetto di <b>Open Data Sicilia</b> curato da @aborruso, @cirospat e @gbvitrano, di cui ho rielaborato il template con stile e layout propri.</p>

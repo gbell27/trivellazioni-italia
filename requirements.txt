@@ -1,0 +1,5 @@
+pandas
+geopandas
+lxml
+shapely
+matplotlib
