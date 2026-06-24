@@ -927,7 +927,8 @@ function apply() {
 function syncURL() {
   var p = new URLSearchParams(location.search);
   var act = Array.from(activeEsiti());
-  act.length === EORD.length ? p.delete('esito') : p.set('esito', act.join(','));
+  var nEsiti = document.querySelectorAll('#esiti .chk').length;
+  act.length === nEsiti ? p.delete('esito') : p.set('esito', act.join(',')); 
   var dn = document.getElementById('dmin'),
     dx = document.getElementById('dmax');
   +dn.value > +dn.min ? p.set('dmin', dn.value) : p.delete('dmin');
